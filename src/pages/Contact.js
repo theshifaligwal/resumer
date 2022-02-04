@@ -43,7 +43,7 @@ const Contact = () => {
     setValue({ ...value, [name]: event.target.value });
   };
 
-  const handelSubmit = async (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // If any field is empty then return
     if (!name && !email && !query) return;
@@ -87,7 +87,7 @@ const Contact = () => {
                 Fill up the form for any query and our team will get back to you
                 within 24 hours.
               </Typography>
-              <form onSubmit={handelSubmit}>
+              <form onSubmit={handleSubmit}>
                 <Grid container spacing={1}>
                   <Grid xs={12} sm={12} item>
                     <TextField
