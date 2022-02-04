@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
     // height: "95vh",
     padding: "2rem",
   },
-  cardStyle: { maxWidth: '25rem', padding: "20px 5px", margin: "auto" },
+  cardStyle: { maxWidth: "25rem", padding: "20px 5px", margin: "auto" },
   bgImage: {
     backgroundImage:
       'url("https://www.idfreshfood.com/wp-content/uploads/2017/09/contact_us_2.jpg")',
@@ -52,8 +52,10 @@ const Contact = () => {
       body: JSON.stringify(value),
     })
       .then((res) => {
-        console.log("Status Code: ", res.status, "Values: ", value);
-        // Clearing Message
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Response Value: ", data);
         setValue({
           name: "",
           email: "",
