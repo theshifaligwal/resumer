@@ -15,8 +15,7 @@ import { url } from "../constants";
 const useStyles = makeStyles(() => ({
   contactPageContainer: {
     zIndex: "2",
-    // height: "95vh",
-    padding: "2rem",
+    margin: "auto",
   },
   cardStyle: { maxWidth: "25rem", padding: "20px 5px", margin: "auto" },
   bgImage: {
@@ -25,6 +24,10 @@ const useStyles = makeStyles(() => ({
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    height: "90vh",
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
   },
 }));
 

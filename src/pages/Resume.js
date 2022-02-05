@@ -14,10 +14,15 @@ const useStyles = makeStyles(() => ({
     backgroundSize: "cover",
     paddingTop: "2rem",
     paddingBottom: "2rem",
+    // height: "90vh",
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
   },
   resumeContainerDiv: {
     width: "50rem",
     margin: "auto",
+    borderRadius: "1rem",
   },
 }));
 
