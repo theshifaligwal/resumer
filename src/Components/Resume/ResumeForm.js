@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { makeStyles } from "@mui/styles";
+
+// Material UI
 import {
   Button,
   Card,
   CardContent,
   Grid,
-  Input,
-  Stack,
   TextField,
   Typography,
 } from "@mui/material";
 
-const useStyles = makeStyles(() => ({}));
-
 const ResumeForm = ({ values, setValues, setIsSubmitted }) => {
-  const classes = useStyles();
   const [photos, setPhotos] = useState();
   const {
     name,

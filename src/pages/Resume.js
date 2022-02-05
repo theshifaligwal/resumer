@@ -1,7 +1,11 @@
 import React, { Fragment, useState } from "react";
+
+// Material UI
+import { makeStyles } from "@mui/styles";
+
+// Components
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
-import { makeStyles } from "@mui/styles";
 import ResumeBuild from "../Components/Resume/ResumeBuild";
 import ResumeForm from "../Components/Resume/ResumeForm";
 
@@ -14,7 +18,6 @@ const useStyles = makeStyles(() => ({
     backgroundSize: "cover",
     paddingTop: "2rem",
     paddingBottom: "2rem",
-    // height: "90vh",
     display: "flex",
     alignContent: "center",
     justifyContent: "center",

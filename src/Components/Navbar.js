@@ -1,7 +1,11 @@
-import { AppBar, CssBaseline, Toolbar, Typography } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import React from "react";
+
+// React Router DOM
 import { Link } from "react-router-dom";
+
+// Material UI
+import { makeStyles } from "@mui/styles";
+import { AppBar, CssBaseline, Toolbar, Typography } from "@mui/material";
 
 const useStyles = makeStyles(() => ({
   navBarContainer: {

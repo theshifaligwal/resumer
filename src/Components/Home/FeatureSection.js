@@ -1,15 +1,11 @@
-import { Typography, Button, ListItemText, List } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+
+// Material UI
+import { Typography, ListItemText, List } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   bgImage: {
-    // backgroundImage:
-    //   'url("https://images-snaphunt.s3-ap-southeast-1.amazonaws.com/content-media/img/5_tips_for_an_awesome_resume.jpg")',
-    // backgroundPosition: "center",
-    // backgroundRepeat: "no-repeat",
-    // backgroundSize: "cover",
     backgroundColor: "#F9E4D4",
     height: "100vh",
     display: "flex",

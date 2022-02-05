@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import { makeStyles } from "@mui/styles";
+import React from "react";
+
+// Material UI
 import { Avatar, Card, CardContent, Grid, Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   topDivResumeBuildDesign: {
@@ -17,9 +19,7 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     justifyContent: "center",
   },
-  nameTypographyResumeBuildDesign: {
-    // margin:'auto'
-  },
+  nameTypographyResumeBuildDesign: {},
   itemDivResumeBuildDesign: {
     display: "flex",
     alignItems: "center",

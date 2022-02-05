@@ -1,4 +1,7 @@
 import React, { Fragment, useState } from "react";
+
+// Material UI
+import { makeStyles } from "@mui/styles";
 import {
   Button,
   Card,
@@ -7,10 +10,13 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+
+// Constants
+import { url } from "../constants";
+
+// Components
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
-import { url } from "../constants";
 
 const useStyles = makeStyles(() => ({
   contactPageContainer: {
@@ -50,7 +56,7 @@ const Contact = () => {
     event.preventDefault();
     // If any field is empty then return
     if (!name && !email && !query) return;
-    const response = await fetch(url, {
+    await fetch(url, {
       method: "POST",
       body: JSON.stringify(value),
     })

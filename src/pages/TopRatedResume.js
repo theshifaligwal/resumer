@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
+
+// Material UI
+import { makeStyles } from "@mui/styles";
 import {
   Avatar,
   Paper,
@@ -12,8 +13,13 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
+
+// Constants
 import { url } from "../constants";
-import { makeStyles } from "@mui/styles";
+
+// Components
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 const useStyles = makeStyles(() => ({
   trrContainerStyle: {
